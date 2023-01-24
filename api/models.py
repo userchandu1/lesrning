@@ -7,4 +7,4 @@ class Comment(models.Model):
     content = models.CharField(max_length=200)
     created = models.DateTimeField(default=datetime.now())
     name = models.TextField()
-    address = models.CharField(max_length=200)
+    address1 = models.CharField(max_length=200)
