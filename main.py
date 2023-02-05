@@ -1,8 +1,13 @@
-import requests
+def mygen(num):
+    print('Generating first n number')
+    n = 1
+    while n <= num:
+        yield n
+        n = n + 1
 
-URL = 'http://localhost:8000/api/1/'
 
-r = requests.get(url=URL)
-data = r.json()
-print(data)
-
+print(type(mygen))
+m = mygen(10)
+print(type(m))
+for i in range(10):
+    print(next(m))

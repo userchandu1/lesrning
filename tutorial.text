@@ -1,0 +1,8 @@
+Generators
+Generator is a function which is responsible to generate a sequence of values.
+We can write generator functions just like ordinary functions, but it uses yield keyword to
+return values.
+
+"""Generators allow you to produce a sequence of values over time, without having to store all
+of them in memory at once. Instead, the generator returns each value as it is requested, using
+the "yield" statement"""
